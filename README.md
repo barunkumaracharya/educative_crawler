@@ -1,26 +1,23 @@
 // Go modules are disabled.
 
 ## About
-java 11 + 3.4.0 - grid issue is coming
-java 1.8 + 3.4.0 - grid issue is not coming
-4.1.2 - grid issue is coming
-gecko - 0.30 - New session issue is not coming
-gecko - 0.18 - new session is coming
-3.4.0 - grid issue is not coming
 
-add email in config
-try adding all timeouts in config
+This is a web crawler specifically designed to crawl e-learning website educative.io
 
-//revisit continue startlearning
+## UseCase -
+Sometimes, you are short on internet connectivity in a remote place, but you dont want to lose speed
+on your courses. So, you might want to save the courses offline, so that you can read them even when 
+the network connectivity is not there. 
 
-// get started , continue
+## Solution
+The design crawls through the educative website and stores screenshots of all the paths in the website.
+You can go through the screenshots and continue your learning.
 
-// Next or Next Module
-WaitWithTimeout
-
-Flow = 
-Homepage -> Login -> Browse All Paths -> Go to module 1 page, (revisit , start learning)
-
-install wkhtml based on readme perfectly.
-
-https://www.educative.io/module/ml-for-software-engineers
+## Setup
+Tools used to test locally
+Java 1.8
+Selenium 4.1.2
+Gecko Driver 0.30
+Clone the repository on your local device. Enter the username and password in the config. 
+Run "go run main.go" inside the repo folder. You are good to go.
+The code  saves all the screenshots in a folder called "output" inside your repository.
